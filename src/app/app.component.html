@@ -1,0 +1,33 @@
+<div align='center'><h1>Owner CRUD with Angular</h1></div>
+
+<div>
+  <table class="table" style="width: 80%">
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Email</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let owner of owners">
+      <td>
+        {{owner.name}}
+      </td>
+      <td>
+        {{owner.username}}
+      </td>
+      <td>
+        {{owner.password}}
+      </td>
+      <td>
+        {{owner.email}}
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <p>
+    <button (click)="addOwner()"> Add Book</button>
+  </p>
+</div>
+<router-outlet></router-outlet>
